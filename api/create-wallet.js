@@ -6,7 +6,6 @@ const privy = new PrivyClient(
 );
 
 export default async function handler(req, res) {
-  // CORS - fixes "Failed to fetch"
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
@@ -31,7 +30,7 @@ export default async function handler(req, res) {
       chain_type: 'starknet',
     });
 
-    console.log(`✅ Starknet address generated: ${wallet.address}`);
+    console.log('✅ Starknet address:', wallet.address);
 
     return res.status(200).json({
       success: true,
@@ -40,12 +39,7 @@ export default async function handler(req, res) {
     });
 
   } catch (err) {
-    console.error('Privy error:', err);
-
-    if (err.message?.toLowerCase().includes('token')) {
-      return res.status(401).json({ error: 'Invalid or expired auth token' });
-    }
-
+    console.error('Error:', err);
     return res.status(500).json({ 
       error: err.message || 'Failed to create Starknet wallet' 
     });
