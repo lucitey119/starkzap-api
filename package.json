@@ -1,7 +1,8 @@
 {
   "name": "starkzap-api",
   "version": "1.0.0",
+  "type": "module",
   "dependencies": {
-    "@privy-io/server-auth": "latest"
+    "@privy-io/node": "latest"
   }
 }
