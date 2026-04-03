@@ -2,6 +2,10 @@
   "name": "starkzap-api",
   "version": "1.0.0",
   "dependencies": {
+    "express": "^4.18.0",
     "@privy-io/node": "1.79.0"
+  },
+  "scripts": {
+    "start": "node api/create-wallet.js"
   }
 }
