@@ -1,9 +1,6 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "pages/**/*.js",
-      "use": "@vercel/node"
-    }
+    { "src": "pages/api/**/*.js", "use": "@vercel/node" }
   ]
 }
