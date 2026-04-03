@@ -2,6 +2,6 @@
   "name": "starkzap-api",
   "version": "1.0.0",
   "dependencies": {
-    "@privy-io/node": "1.79.0"     // pinned stable version
+    "@privy-io/node": "1.79.0"
   }
 }
