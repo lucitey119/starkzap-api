@@ -1,12 +1,7 @@
 {
   "name": "starkzap-api",
   "version": "1.0.0",
-  "type": "module",
   "dependencies": {
     "@privy-io/node": "latest"
-  },
-  "scripts": {
-    "dev": "echo 'Use Vercel dev or deploy'",
-    "build": "echo 'Build handled by Vercel'"
   }
 }
