@@ -5,12 +5,8 @@
   "dependencies": {
     "@privy-io/node": "latest"
   },
-  "devDependencies": {
-    "next": "latest"
-  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "echo 'Use Vercel dev or deploy'",
+    "build": "echo 'Build handled by Vercel'"
   }
 }
