@@ -4,5 +4,13 @@
   "type": "module",
   "dependencies": {
     "@privy-io/node": "latest"
+  },
+  "devDependencies": {
+    "next": "latest"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   }
 }
